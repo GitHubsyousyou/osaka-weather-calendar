@@ -17,34 +17,34 @@ TZ = "Asia/Tokyo"
 OUT = "osaka-weather.ics"
 
 WEATHER = {
-    0: ("☀️", "Clear sky"),
-    1: ("🌤️", "Mainly clear"),
-    2: ("⛅", "Partly cloudy"),
-    3: ("☁️", "Overcast"),
-    45: ("🌫️", "Fog"),
-    48: ("🌫️", "Depositing rime fog"),
-    51: ("🌦️", "Light drizzle"),
-    53: ("🌦️", "Moderate drizzle"),
-    55: ("🌧️", "Dense drizzle"),
-    56: ("🌧️", "Light freezing drizzle"),
-    57: ("🌧️", "Dense freezing drizzle"),
-    61: ("🌦️", "Slight rain"),
-    63: ("🌧️", "Moderate rain"),
-    65: ("🌧️", "Heavy rain"),
-    66: ("🌧️", "Light freezing rain"),
-    67: ("🌧️", "Heavy freezing rain"),
-    71: ("🌨️", "Slight snow"),
-    73: ("🌨️", "Moderate snow"),
-    75: ("❄️", "Heavy snow"),
-    77: ("🌨️", "Snow grains"),
-    80: ("🌦️", "Slight rain showers"),
-    81: ("🌧️", "Moderate rain showers"),
-    82: ("⛈️", "Violent rain showers"),
-    85: ("🌨️", "Slight snow showers"),
-    86: ("❄️", "Heavy snow showers"),
-    95: ("⛈️", "Thunderstorm"),
-    96: ("⛈️", "Thunderstorm with slight hail"),
-    99: ("⛈️", "Thunderstorm with heavy hail"),
+    0: ("☀️", "快晴"),
+    1: ("🌤️", "晴れ"),
+    2: ("⛅", "晴れ時々くもり"),
+    3: ("☁️", "くもり"),
+    45: ("🌫️", "霧"),
+    48: ("🌫️", "霧氷"),
+    51: ("🌦️", "弱い霧雨"),
+    53: ("🌦️", "霧雨"),
+    55: ("🌧️", "強い霧雨"),
+    56: ("🌧️", "弱い着氷性の霧雨"),
+    57: ("🌧️", "強い着氷性の霧雨"),
+    61: ("🌦️", "弱い雨"),
+    63: ("🌧️", "雨"),
+    65: ("🌧️", "強い雨"),
+    66: ("🌧️", "弱い着氷性の雨"),
+    67: ("🌧️", "強い着氷性の雨"),
+    71: ("🌨️", "弱い雪"),
+    73: ("🌨️", "雪"),
+    75: ("❄️", "大雪"),
+    77: ("🌨️", "細かい雪"),
+    80: ("🌦️", "弱いにわか雨"),
+    81: ("🌧️", "にわか雨"),
+    82: ("⛈️", "激しいにわか雨"),
+    85: ("🌨️", "弱いにわか雪"),
+    86: ("❄️", "強いにわか雪"),
+    95: ("⛈️", "雷雨"),
+    96: ("⛈️", "ひょうを伴う雷雨"),
+    99: ("⛈️", "強いひょうを伴う雷雨"),
 }
 
 def get_json(url):
@@ -89,11 +89,11 @@ def event(day, row, source):
     summary = f"{icon} {high_s}～{low_s}"
     description = (
         f"{icon} {desc}\n"
-        f"🌡️ High {high_s} · Low {low_s}\n"
-        f"🌧️ Precipitation chance {rain_s}\n"
-        f"🌅 Sunrise {sunrise_s} · Sunset {sunset_s}\n"
-        f"💧 Humidity {humidity_s}\n\n"
-        f"Osaka · Data: Open-Meteo ({source})"
+        f"🌡️ 最高 {high_s} ／ 最低 {low_s}\n"
+        f"🌧️ 降水確率 {rain_s}\n"
+        f"🌅 日の出 {sunrise_s} ／ 日の入り {sunset_s}\n"
+        f"💧 湿度 {humidity_s}\n\n"
+        f"大阪市 · データ：Open-Meteo（{source}）"
     )
     uid = f"osaka-weather-{day.isoformat()}@osaka-weather-calendar"
     dtstamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
