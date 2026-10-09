@@ -148,3 +148,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Workflow trigger refresh: regenerate the feed after initial repository setup.
