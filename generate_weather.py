@@ -62,7 +62,7 @@ def weather_info(code):
         return ("🌡️", "天気情報")
 
 def escape_ics(s):
-    return str(s).replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\n")
+    return str(s).replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
 
 def fold_line(line, limit=70):
     out, current, count = [], "", 0
