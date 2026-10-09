@@ -155,7 +155,8 @@ def main():
     # Recent past and forecast, avoiding the historical archive's normal publication delay.
     params = {
         "latitude": LAT, "longitude": LON,
-        "daily": "weather_code,temperature_2m_max,temperature_2m_min",
+        "daily": "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunrise,sunset",
+        "hourly": "relative_humidity_2m",
         "timezone": TZ, "temperature_unit": "celsius",
         "past_days": 5, "forecast_days": 16,
     }
