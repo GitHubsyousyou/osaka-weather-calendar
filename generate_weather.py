@@ -64,7 +64,7 @@ def event(day, row, source):
     icon, desc = weather_info(code)
     high_s = "—" if high is None else f"{round(float(high))}°C"
     low_s = "—" if low is None else f"{round(float(low))}°C"
-    summary = f"{icon} 大阪天气｜{desc}｜最高 {high_s} / 最低 {low_s}"
+    summary = f"{icon} {high_s}～{low_s}"
     description = (
         f"地区：大阪市\\n天气：{desc}\\n最高气温：{high_s}\\n最低气温：{low_s}\\n"
         f"数据来源：Open-Meteo（{source}）\\n"
