@@ -57,7 +57,7 @@ def api_url(base, params):
 
 def weather_info(code):
     try:
-        return WEATHER.get(int(code), ("🌡️", "天气状况"))
+        return WEATHER.get(int(code), ("🌡️", "天気情報"))
     except (TypeError, ValueError):
         return ("🌡️", "天气状况")
 
@@ -150,7 +150,7 @@ def main():
             "timezone": TZ, "temperature_unit": "celsius",
         }
         data_by_day.update(read_daily(get_json(api_url("https://archive-api.open-meteo.com/v1/archive", params))))
-        sources.update({d: "历史再分析" for d in data_by_day})
+        sources.update({d: "過去の再解析データ" for d in data_by_day})
 
     # Recent past and forecast, avoiding the historical archive's normal publication delay.
     params = {
@@ -164,18 +164,18 @@ def main():
     for d, row in recent_and_forecast.items():
         if today - timedelta(days=5) <= d <= future_end:
             data_by_day[d] = row
-            sources[d] = "近期模型数据" if d < today else "天气预报"
+            sources[d] = "直近のモデルデータ" if d < today else "天気予報"
 
     lines = [
         "BEGIN:VCALENDAR", "VERSION:2.0",
-        "PRODID:-//Osaka Weather Calendar//ZH", "CALSCALE:GREGORIAN",
+        "PRODID:-//Osaka Weather Calendar//JA", "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH", "X-WR-CALNAME:大阪天气",
         "X-WR-TIMEZONE:Asia/Tokyo", "REFRESH-INTERVAL;VALUE=DURATION:PT12H",
         "X-PUBLISHED-TTL:PT12H",
     ]
     day = past_start
     while day <= future_end:
-        lines.extend(event(day, data_by_day.get(day), sources.get(day, "数据暂缺")))
+        lines.extend(event(day, data_by_day.get(day), sources.get(day, "データなし")))
         day += timedelta(days=1)
     lines.append("END:VCALENDAR")
     with open(OUT, "w", encoding="utf-8", newline="") as f:
