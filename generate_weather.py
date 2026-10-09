@@ -60,17 +60,21 @@ def fold_line(line, limit=70):
     return "\r\n".join(out)
 
 def event(day, row, source):
-    code, high, low = row if row else (None, None, None)
+    code, high, low, rain, humidity, sunrise, sunset = row if row else (None, None, None, None, None, None, None)
     icon, desc = weather_info(code)
     high_s = "—" if high is None else f"{round(float(high))}°C"
     low_s = "—" if low is None else f"{round(float(low))}°C"
+    rain_s = "—" if rain is None else f"{round(float(rain))}%"
+    humidity_s = "—" if humidity is None else f"{round(float(humidity))}%"
+    sunrise_s = "—" if not sunrise else str(sunrise)[11:16]
+    sunset_s = "—" if not sunset else str(sunset)[11:16]
     summary = f"{icon} {high_s}～{low_s}"
     description = (
-        f"地区：大阪市\\n天气：{desc}\\n最高气温：{high_s}\\n最低气温：{low_s}\\n"
+        f"地区：大阪市\\n天气：{desc}\\n最高气温：{high_s}\\n最低气温：{low_s}\\n降水概率：{rain_s}\\n湿度：{humidity_s}\\n日出：{sunrise_s}\\n日落：{sunset_s}\\n"
         f"数据来源：Open-Meteo（{source}）\\n"
         "说明：历史值为再分析/模型估算，不是气象台观测站原始实测记录。"
         if day < today_jst() else
-        f"地区：大阪市\\n天气：{desc}\\n最高气温：{high_s}\\n最低气温：{low_s}\\n"
+        f"地区：大阪市\\n天气：{desc}\\n最高气温：{high_s}\\n最低气温：{low_s}\\n降水概率：{rain_s}\\n湿度：{humidity_s}\\n日出：{sunrise_s}\\n日落：{sunset_s}\\n"
         "数据来源：Open-Meteo 天气预报"
     )
     uid = f"osaka-weather-{day.isoformat()}@osaka-weather-calendar"
@@ -96,6 +100,10 @@ def read_daily(data):
             daily.get("weather_code", [None] * len(times))[i],
             daily.get("temperature_2m_max", [None] * len(times))[i],
             daily.get("temperature_2m_min", [None] * len(times))[i],
+            daily.get("precipitation_probability_max", [None] * len(times))[i],
+            daily.get("relative_humidity_2m_mean", [None] * len(times))[i],
+            daily.get("sunrise", [None] * len(times))[i],
+            daily.get("sunset", [None] * len(times))[i],
         )
     return result
 
@@ -111,7 +119,7 @@ def main():
         params = {
             "latitude": LAT, "longitude": LON,
             "start_date": past_start.isoformat(), "end_date": older_end.isoformat(),
-            "daily": "weather_code,temperature_2m_max,temperature_2m_min",
+            "daily": "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,relative_humidity_2m_mean,sunrise,sunset",
             "timezone": TZ, "temperature_unit": "celsius",
         }
         data_by_day.update(read_daily(get_json(api_url("https://archive-api.open-meteo.com/v1/archive", params))))
