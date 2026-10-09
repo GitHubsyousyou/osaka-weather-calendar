@@ -59,7 +59,7 @@ def weather_info(code):
     try:
         return WEATHER.get(int(code), ("🌡️", "天気情報"))
     except (TypeError, ValueError):
-        return ("🌡️", "天气状况")
+        return ("🌡️", "天気情報")
 
 def escape_ics(s):
     return str(s).replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
@@ -169,7 +169,7 @@ def main():
     lines = [
         "BEGIN:VCALENDAR", "VERSION:2.0",
         "PRODID:-//Osaka Weather Calendar//JA", "CALSCALE:GREGORIAN",
-        "METHOD:PUBLISH", "X-WR-CALNAME:大阪天气",
+        "METHOD:PUBLISH", "X-WR-CALNAME:大阪の天気",
         "X-WR-TIMEZONE:Asia/Tokyo", "REFRESH-INTERVAL;VALUE=DURATION:PT12H",
         "X-PUBLISHED-TTL:PT12H",
     ]
