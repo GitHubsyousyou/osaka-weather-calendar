@@ -9,495 +9,816 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:osaka-weather-2026-09-25@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:☁️ 31°C～21°C
-DESCRIPTION:☁️ くもり（大阪市）\\n🌡️ 気温：最高 
- 31°C ／ 最低 21°C\\n🧍 体感温度：32°C～23°C\\n🌧️ 
- 降水確率：—\\n💧 湿度（日平均）：57%\\n💨 最大
- 風速：9 km/h\\n☀️ UV指数（最大）：—\\n🌅 日の出
- ：05:47 ／ 日の入り：17:51\\n🌓 月相：満月 ／ 月齢
- ：約 14.4 日 ／ 照明率：約 100%\\n🌡️ 気圧（海面更
- 正・日平均）：1015 hPa\\n\\nデータ：Open-Meteo（過去の
- 再解析データ）
+DESCRIPTION:☁️ くもり（大阪市）
+🌡️ 気温：最高 31
+ °C ／ 最低 21°C
+🧍 体感温度：32°C～23°C
+🌧️ 降水
+ 確率：—
+💧 湿度（日平均）：57%
+💨 最大風速：9 k
+ m/h
+☀️ UV指数（最大）：—
+🌅 日の出：05:47 ／ 日
+ の入り：17:51
+🌓 月相：満月 ／ 月齢：約 14.4 日 ／ 
+ 照明率：約 100%
+🌡️ 気圧（海面更正・日平均）：1
+ 015 hPa
+
+データ：Open-Meteo（過去の再解析データ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-09-26@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260927
 SUMMARY:🌦️ 25°C～21°C
-DESCRIPTION:🌦️ 弱い雨（大阪市）\\n🌡️ 気温：最高
-  25°C ／ 最低 21°C\\n🧍 体感温度：27°C～24°C\\n🌧️
-  降水確率：—\\n💧 湿度（日平均）：78%\\n💨 最大
- 風速：9 km/h\\n☀️ UV指数（最大）：—\\n🌅 日の出
- ：05:48 ／ 日の入り：17:49\\n🌓 月相：満月 ／ 月齢
- ：約 15.4 日 ／ 照明率：約 100%\\n🌡️ 気圧（海面更
- 正・日平均）：1011 hPa\\n\\nデータ：Open-Meteo（過去の
- 再解析データ）
+DESCRIPTION:🌦️ 弱い雨（大阪市）
+🌡️ 気温：最高 2
+ 5°C ／ 最低 21°C
+🧍 体感温度：27°C～24°C
+🌧️ 降
+ 水確率：—
+💧 湿度（日平均）：78%
+💨 最大風速：
+ 9 km/h
+☀️ UV指数（最大）：—
+🌅 日の出：05:48 ／ 
+ 日の入り：17:49
+🌓 月相：満月 ／ 月齢：約 15.4 日 
+ ／ 照明率：約 100%
+🌡️ 気圧（海面更正・日平均）
+ ：1011 hPa
+
+データ：Open-Meteo（過去の再解析データ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-09-27@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20260927
 DTEND;VALUE=DATE:20260928
 SUMMARY:🌦️ 26°C～21°C
-DESCRIPTION:🌦️ 弱い雨（大阪市）\\n🌡️ 気温：最高
-  26°C ／ 最低 21°C\\n🧍 体感温度：30°C～24°C\\n🌧️
-  降水確率：—\\n💧 湿度（日平均）：89%\\n💨 最大
- 風速：9 km/h\\n☀️ UV指数（最大）：—\\n🌅 日の出
- ：05:49 ／ 日の入り：17:48\\n🌓 月相：欠けていく月 
- ／ 月齢：約 16.4 日 ／ 照明率：約 97%\\n🌡️ 気圧（
- 海面更正・日平均）：1010 hPa\\n\\nデータ：Open-Meteo（
- 過去の再解析データ）
+DESCRIPTION:🌦️ 弱い雨（大阪市）
+🌡️ 気温：最高 2
+ 6°C ／ 最低 21°C
+🧍 体感温度：30°C～24°C
+🌧️ 降
+ 水確率：—
+💧 湿度（日平均）：89%
+💨 最大風速：
+ 9 km/h
+☀️ UV指数（最大）：—
+🌅 日の出：05:49 ／ 
+ 日の入り：17:48
+🌓 月相：欠けていく月 ／ 月齢：
+ 約 16.4 日 ／ 照明率：約 97%
+🌡️ 気圧（海面更正・
+ 日平均）：1010 hPa
+
+データ：Open-Meteo（過去の再解析
+ データ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-09-28@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
 SUMMARY:🌧️ 26°C～23°C
-DESCRIPTION:🌧️ 雨（大阪市）\\n🌡️ 気温：最高 26°C
-  ／ 最低 23°C\\n🧍 体感温度：31°C～27°C\\n🌧️ 降
- 水確率：—\\n💧 湿度（日平均）：93%\\n💨 最大風
- 速：13 km/h\\n☀️ UV指数（最大）：—\\n🌅 日の出：
- 05:50 ／ 日の入り：17:46\\n🌓 月相：欠けていく月 ／
-  月齢：約 17.4 日 ／ 照明率：約 92%\\n🌡️ 気圧（海
- 面更正・日平均）：1010 hPa\\n\\nデータ：Open-Meteo（過
- 去の再解析データ）
+DESCRIPTION:🌧️ 雨（大阪市）
+🌡️ 気温：最高 26°C 
+ ／ 最低 23°C
+🧍 体感温度：31°C～27°C
+🌧️ 降水確
+ 率：—
+💧 湿度（日平均）：93%
+💨 最大風速：13 km/
+ h
+☀️ UV指数（最大）：—
+🌅 日の出：05:50 ／ 日の
+ 入り：17:46
+🌓 月相：欠けていく月 ／ 月齢：約 17.4
+  日 ／ 照明率：約 92%
+🌡️ 気圧（海面更正・日平
+ 均）：1010 hPa
+
+データ：Open-Meteo（過去の再解析デー
+ タ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-09-29@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20260930
 SUMMARY:🌧️ 23°C～19°C
-DESCRIPTION:🌧️ 強い雨（大阪市）\\n🌡️ 気温：最高
-  23°C ／ 最低 19°C\\n🧍 体感温度：28°C～21°C\\n🌧️
-  降水確率：—\\n💧 湿度（日平均）：91%\\n💨 最大
- 風速：8 km/h\\n☀️ UV指数（最大）：—\\n🌅 日の出
- ：05:50 ／ 日の入り：17:45\\n🌓 月相：欠けていく月 
- ／ 月齢：約 18.4 日 ／ 照明率：約 86%\\n🌡️ 気圧（
- 海面更正・日平均）：1013 hPa\\n\\nデータ：Open-Meteo（
- 過去の再解析データ）
+DESCRIPTION:🌧️ 強い雨（大阪市）
+🌡️ 気温：最高 2
+ 3°C ／ 最低 19°C
+🧍 体感温度：28°C～21°C
+🌧️ 降
+ 水確率：—
+💧 湿度（日平均）：91%
+💨 最大風速：
+ 8 km/h
+☀️ UV指数（最大）：—
+🌅 日の出：05:50 ／ 
+ 日の入り：17:45
+🌓 月相：欠けていく月 ／ 月齢：
+ 約 18.4 日 ／ 照明率：約 86%
+🌡️ 気圧（海面更正・
+ 日平均）：1013 hPa
+
+データ：Open-Meteo（過去の再解析
+ データ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-09-30@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:☁️ 26°C～17°C
-DESCRIPTION:☁️ くもり（大阪市）\\n🌡️ 気温：最高 
- 26°C ／ 最低 17°C\\n🧍 体感温度：29°C～19°C\\n🌧️ 
- 降水確率：—\\n💧 湿度（日平均）：79%\\n💨 最大
- 風速：9 km/h\\n☀️ UV指数（最大）：—\\n🌅 日の出
- ：05:51 ／ 日の入り：17:44\\n🌓 月相：欠けていく月 
- ／ 月齢：約 19.4 日 ／ 照明率：約 78%\\n🌡️ 気圧（
- 海面更正・日平均）：1012 hPa\\n\\nデータ：Open-Meteo（
- 過去の再解析データ）
+DESCRIPTION:☁️ くもり（大阪市）
+🌡️ 気温：最高 26
+ °C ／ 最低 17°C
+🧍 体感温度：29°C～19°C
+🌧️ 降水
+ 確率：—
+💧 湿度（日平均）：79%
+💨 最大風速：9 k
+ m/h
+☀️ UV指数（最大）：—
+🌅 日の出：05:51 ／ 日
+ の入り：17:44
+🌓 月相：欠けていく月 ／ 月齢：約 1
+ 9.4 日 ／ 照明率：約 78%
+🌡️ 気圧（海面更正・日
+ 平均）：1012 hPa
+
+データ：Open-Meteo（過去の再解析デ
+ ータ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-01@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:☁️ 27°C～17°C
-DESCRIPTION:☁️ くもり（大阪市）\\n🌡️ 気温：最高 
- 27°C ／ 最低 17°C\\n🧍 体感温度：31°C～19°C\\n🌧️ 
- 降水確率：—\\n💧 湿度（日平均）：84%\\n💨 最大
- 風速：7 km/h\\n☀️ UV指数（最大）：—\\n🌅 日の出
- ：05:52 ／ 日の入り：17:42\\n🌓 月相：欠けていく月 
- ／ 月齢：約 20.4 日 ／ 照明率：約 68%\\n🌡️ 気圧（
- 海面更正・日平均）：1012 hPa\\n\\nデータ：Open-Meteo（
- 過去の再解析データ）
+DESCRIPTION:☁️ くもり（大阪市）
+🌡️ 気温：最高 27
+ °C ／ 最低 17°C
+🧍 体感温度：31°C～19°C
+🌧️ 降水
+ 確率：—
+💧 湿度（日平均）：84%
+💨 最大風速：7 k
+ m/h
+☀️ UV指数（最大）：—
+🌅 日の出：05:52 ／ 日
+ の入り：17:42
+🌓 月相：欠けていく月 ／ 月齢：約 2
+ 0.4 日 ／ 照明率：約 68%
+🌡️ 気圧（海面更正・日
+ 平均）：1012 hPa
+
+データ：Open-Meteo（過去の再解析デ
+ ータ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-02@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:⛅ 25°C～19°C
-DESCRIPTION:⛅ 晴れ時々くもり（大阪市）\\n🌡️ 気温
- ：最高 25°C ／ 最低 19°C\\n🧍 体感温度：26°C～19°C\
- \n🌧️ 降水確率：—\\n💧 湿度（日平均）：64%\\n
- 💨 最大風速：13 km/h\\n☀️ UV指数（最大）：—\\n
- 🌅 日の出：05:53 ／ 日の入り：17:41\\n🌓 月相：下
- 弦 ／ 月齢：約 21.4 日 ／ 照明率：約 58%\\n🌡️ 気
- 圧（海面更正・日平均）：1016 hPa\\n\\nデータ：Open-Me
- teo（過去の再解析データ）
+DESCRIPTION:⛅ 晴れ時々くもり（大阪市）
+🌡️ 気温：
+ 最高 25°C ／ 最低 19°C
+🧍 体感温度：26°C～19°C
+🌧
+ ️ 降水確率：—
+💧 湿度（日平均）：64%
+💨 最大
+ 風速：13 km/h
+☀️ UV指数（最大）：—
+🌅 日の出：0
+ 5:53 ／ 日の入り：17:41
+🌓 月相：下弦 ／ 月齢：約 2
+ 1.4 日 ／ 照明率：約 58%
+🌡️ 気圧（海面更正・日
+ 平均）：1016 hPa
+
+データ：Open-Meteo（過去の再解析デ
+ ータ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-03@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261004
 SUMMARY:☁️ 25°C～16°C
-DESCRIPTION:☁️ くもり（大阪市）\\n🌡️ 気温：最高 
- 25°C ／ 最低 16°C\\n🧍 体感温度：26°C～16°C\\n🌧️ 
- 降水確率：—\\n💧 湿度（日平均）：65%\\n💨 最大
- 風速：13 km/h\\n☀️ UV指数（最大）：—\\n🌅 日の出
- ：05:53 ／ 日の入り：17:39\\n🌓 月相：下弦 ／ 月齢
- ：約 22.4 日 ／ 照明率：約 47%\\n🌡️ 気圧（海面更
- 正・日平均）：1019 hPa\\n\\nデータ：Open-Meteo（過去の
- 再解析データ）
+DESCRIPTION:☁️ くもり（大阪市）
+🌡️ 気温：最高 25
+ °C ／ 最低 16°C
+🧍 体感温度：26°C～16°C
+🌧️ 降水
+ 確率：—
+💧 湿度（日平均）：65%
+💨 最大風速：13 
+ km/h
+☀️ UV指数（最大）：—
+🌅 日の出：05:53 ／ 日
+ の入り：17:39
+🌓 月相：下弦 ／ 月齢：約 22.4 日 ／ 
+ 照明率：約 47%
+🌡️ 気圧（海面更正・日平均）：10
+ 19 hPa
+
+データ：Open-Meteo（過去の再解析データ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-04@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261005
 SUMMARY:🌦️ 22°C～18°C
-DESCRIPTION:🌦️ 弱い雨（大阪市）\\n🌡️ 気温：最高
-  22°C ／ 最低 18°C\\n🧍 体感温度：22°C～18°C\\n🌧️
-  降水確率：—\\n💧 湿度（日平均）：83%\\n💨 最大
- 風速：14 km/h\\n☀️ UV指数（最大）：—\\n🌅 日の出
- ：05:54 ／ 日の入り：17:38\\n🌓 月相：有明月 ／ 月
- 齢：約 23.4 日 ／ 照明率：約 37%\\n🌡️ 気圧（海面
- 更正・日平均）：1017 hPa\\n\\nデータ：Open-Meteo（過去
- の再解析データ）
+DESCRIPTION:🌦️ 弱い雨（大阪市）
+🌡️ 気温：最高 2
+ 2°C ／ 最低 18°C
+🧍 体感温度：22°C～18°C
+🌧️ 降
+ 水確率：—
+💧 湿度（日平均）：83%
+💨 最大風速：
+ 14 km/h
+☀️ UV指数（最大）：—
+🌅 日の出：05:54 ／ 
+ 日の入り：17:38
+🌓 月相：有明月 ／ 月齢：約 23.4 
+ 日 ／ 照明率：約 37%
+🌡️ 気圧（海面更正・日平均
+ ）：1017 hPa
+
+データ：Open-Meteo（過去の再解析データ
+ ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-05@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261006
 SUMMARY:🌧️ 20°C～18°C
-DESCRIPTION:🌧️ 雨（大阪市）\\n🌡️ 気温：最高 20°C
-  ／ 最低 18°C\\n🧍 体感温度：22°C～20°C\\n🌧️ 降
- 水確率：96%\\n💧 湿度（日平均）：92%\\n💨 最大風
- 速：7 km/h\\n☀️ UV指数（最大）：4.2\\n🌅 日の出：0
- 5:55 ／ 日の入り：17:37\\n🌓 月相：有明月 ／ 月齢：
- 約 24.4 日 ／ 照明率：約 27%\\n🌡️ 気圧（海面更正
- ・日平均）：1012 hPa\\n\\nデータ：Open-Meteo（直近のモ
- デルデータ）
+DESCRIPTION:🌧️ 雨（大阪市）
+🌡️ 気温：最高 20°C 
+ ／ 最低 18°C
+🧍 体感温度：22°C～20°C
+🌧️ 降水確
+ 率：87%
+💧 湿度（日平均）：92%
+💨 最大風速：7 km/h
+ 
+☀️ UV指数（最大）：4.2
+🌅 日の出：05:55 ／ 日の
+ 入り：17:37
+🌓 月相：有明月 ／ 月齢：約 24.4 日 ／ 
+ 照明率：約 27%
+🌡️ 気圧（海面更正・日平均）：10
+ 12 hPa
+
+データ：Open-Meteo（直近のモデルデータ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-06@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:☁️ 25°C～19°C
-DESCRIPTION:☁️ くもり（大阪市）\\n🌡️ 気温：最高 
- 25°C ／ 最低 19°C\\n🧍 体感温度：25°C～19°C\\n🌧️ 
- 降水確率：39%\\n💧 湿度（日平均）：73%\\n💨 最大
- 風速：12 km/h\\n☀️ UV指数（最大）：6.0\\n🌅 日の出
- ：05:56 ／ 日の入り：17:35\\n🌓 月相：有明月 ／ 月
- 齢：約 25.4 日 ／ 照明率：約 18%\\n🌡️ 気圧（海面
- 更正・日平均）：1010 hPa\\n\\nデータ：Open-Meteo（直近
- のモデルデータ）
+DESCRIPTION:☁️ くもり（大阪市）
+🌡️ 気温：最高 25
+ °C ／ 最低 19°C
+🧍 体感温度：25°C～19°C
+🌧️ 降水
+ 確率：49%
+💧 湿度（日平均）：73%
+💨 最大風速：12 
+ km/h
+☀️ UV指数（最大）：6.0
+🌅 日の出：05:56 ／ 日
+ の入り：17:35
+🌓 月相：有明月 ／ 月齢：約 25.4 日 
+ ／ 照明率：約 18%
+🌡️ 気圧（海面更正・日平均）
+ ：1010 hPa
+
+データ：Open-Meteo（直近のモデルデータ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-07@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:🌤️ 24°C～16°C
-DESCRIPTION:🌤️ 晴れ（大阪市）\\n🌡️ 気温：最高 24
- °C ／ 最低 16°C\\n🧍 体感温度：24°C～16°C\\n🌧️ 
- 降水確率：0%\\n💧 湿度（日平均）：62%\\n💨 最大風
- 速：11 km/h\\n☀️ UV指数（最大）：6.0\\n🌅 日の出：
- 05:56 ／ 日の入り：17:34\\n🌓 月相：有明月 ／ 月齢
- ：約 26.4 日 ／ 照明率：約 11%\\n🌡️ 気圧（海面更
- 正・日平均）：1017 hPa\\n\\nデータ：Open-Meteo（直近の
- モデルデータ）
+DESCRIPTION:🌤️ 晴れ（大阪市）
+🌡️ 気温：最高 24°
+ C ／ 最低 16°C
+🧍 体感温度：24°C～16°C
+🌧️ 降水
+ 確率：0%
+💧 湿度（日平均）：62%
+💨 最大風速：11 k
+ m/h
+☀️ UV指数（最大）：6.0
+🌅 日の出：05:56 ／ 日
+ の入り：17:34
+🌓 月相：有明月 ／ 月齢：約 26.4 日 
+ ／ 照明率：約 11%
+🌡️ 気圧（海面更正・日平均）
+ ：1017 hPa
+
+データ：Open-Meteo（直近のモデルデータ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-08@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
 SUMMARY:☀️ 26°C～14°C
-DESCRIPTION:☀️ 快晴（大阪市）\\n🌡️ 気温：最高 26
- °C ／ 最低 14°C\\n🧍 体感温度：26°C～14°C\\n🌧️ 
- 降水確率：0%\\n💧 湿度（日平均）：65%\\n💨 最大風
- 速：8 km/h\\n☀️ UV指数（最大）：6.0\\n🌅 日の出：0
- 5:57 ／ 日の入り：17:33\\n🌓 月相：有明月 ／ 月齢：
- 約 27.4 日 ／ 照明率：約 5%\\n🌡️ 気圧（海面更正
- ・日平均）：1023 hPa\\n\\nデータ：Open-Meteo（直近のモ
- デルデータ）
+DESCRIPTION:☀️ 快晴（大阪市）
+🌡️ 気温：最高 26°C
+  ／ 最低 14°C
+🧍 体感温度：26°C～14°C
+🌧️ 降水確
+ 率：0%
+💧 湿度（日平均）：65%
+💨 最大風速：8 km/h
+
+ ☀️ UV指数（最大）：6.0
+🌅 日の出：05:57 ／ 日の
+ 入り：17:33
+🌓 月相：有明月 ／ 月齢：約 27.4 日 ／ 
+ 照明率：約 5%
+🌡️ 気圧（海面更正・日平均）：102
+ 3 hPa
+
+データ：Open-Meteo（直近のモデルデータ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-09@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:🌤️ 28°C～17°C
-DESCRIPTION:🌤️ 晴れ（大阪市）\\n🌡️ 気温：最高 28
- °C ／ 最低 17°C\\n🧍 体感温度：30°C～17°C\\n🌧️ 
- 降水確率：0%\\n💧 湿度（日平均）：68%\\n💨 最大風
- 速：7 km/h\\n☀️ UV指数（最大）：5.8\\n🌅 日の出：0
- 5:58 ／ 日の入り：17:31\\n🌓 月相：有明月 ／ 月齢：
- 約 28.4 日 ／ 照明率：約 1%\\n🌡️ 気圧（海面更正
- ・日平均）：1023 hPa\\n\\nデータ：Open-Meteo（直近のモ
- デルデータ）
+DESCRIPTION:🌤️ 晴れ（大阪市）
+🌡️ 気温：最高 28°
+ C ／ 最低 17°C
+🧍 体感温度：30°C～17°C
+🌧️ 降水
+ 確率：0%
+💧 湿度（日平均）：68%
+💨 最大風速：7 km
+ /h
+☀️ UV指数（最大）：5.8
+🌅 日の出：05:58 ／ 日
+ の入り：17:31
+🌓 月相：有明月 ／ 月齢：約 28.4 日 
+ ／ 照明率：約 1%
+🌡️ 気圧（海面更正・日平均）
+ ：1023 hPa
+
+データ：Open-Meteo（直近のモデルデータ）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-10@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:🌤️ 27°C～17°C
-DESCRIPTION:🌤️ 晴れ（大阪市）\\n🌡️ 気温：最高 27
- °C ／ 最低 17°C\\n🧍 体感温度：29°C～18°C\\n🌧️ 
- 降水確率：0%\\n💧 湿度（日平均）：74%\\n💨 最大風
- 速：6 km/h\\n☀️ UV指数（最大）：5.8\\n🌅 日の出：0
- 5:59 ／ 日の入り：17:30\\n🌓 月相：新月 ／ 月齢：約
-  29.4 日 ／ 照明率：約 0%\\n🌡️ 気圧（海面更正・
- 日平均）：1021 hPa\\n\\nデータ：Open-Meteo（天気予報）
+DESCRIPTION:🌤️ 晴れ（大阪市）
+🌡️ 気温：最高 27°
+ C ／ 最低 17°C
+🧍 体感温度：29°C～18°C
+🌧️ 降水
+ 確率：0%
+💧 湿度（日平均）：74%
+💨 最大風速：6 km
+ /h
+☀️ UV指数（最大）：5.8
+🌅 日の出：05:59 ／ 日
+ の入り：17:30
+🌓 月相：新月 ／ 月齢：約 29.4 日 ／ 
+ 照明率：約 0%
+🌡️ 気圧（海面更正・日平均）：102
+ 1 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-11@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
 SUMMARY:☀️ 28°C～17°C
-DESCRIPTION:☀️ 快晴（大阪市）\\n🌡️ 気温：最高 28
- °C ／ 最低 17°C\\n🧍 体感温度：31°C～19°C\\n🌧️ 
- 降水確率：0%\\n💧 湿度（日平均）：71%\\n💨 最大風
- 速：7 km/h\\n☀️ UV指数（最大）：5.8\\n🌅 日の出：0
- 6:00 ／ 日の入り：17:29\\n🌓 月相：新月 ／ 月齢：約
-  0.9 日 ／ 照明率：約 1%\\n🌡️ 気圧（海面更正・日
- 平均）：1020 hPa\\n\\nデータ：Open-Meteo（天気予報）
+DESCRIPTION:☀️ 快晴（大阪市）
+🌡️ 気温：最高 28°C
+  ／ 最低 17°C
+🧍 体感温度：31°C～19°C
+🌧️ 降水確
+ 率：0%
+💧 湿度（日平均）：71%
+💨 最大風速：7 km/h
+
+ ☀️ UV指数（最大）：5.8
+🌅 日の出：06:00 ／ 日の
+ 入り：17:29
+🌓 月相：新月 ／ 月齢：約 0.9 日 ／ 照
+ 明率：約 1%
+🌡️ 気圧（海面更正・日平均）：1020 h
+ Pa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-12@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 SUMMARY:🌤️ 27°C～17°C
-DESCRIPTION:🌤️ 晴れ（大阪市）\\n🌡️ 気温：最高 27
- °C ／ 最低 17°C\\n🧍 体感温度：29°C～19°C\\n🌧️ 
- 降水確率：4%\\n💧 湿度（日平均）：72%\\n💨 最大風
- 速：8 km/h\\n☀️ UV指数（最大）：5.6\\n🌅 日の出：0
- 6:00 ／ 日の入り：17:27\\n🌓 月相：三日月～上弦前 
- ／ 月齢：約 1.9 日 ／ 照明率：約 4%\\n🌡️ 気圧（
- 海面更正・日平均）：1020 hPa\\n\\nデータ：Open-Meteo（
- 天気予報）
+DESCRIPTION:🌤️ 晴れ（大阪市）
+🌡️ 気温：最高 27°
+ C ／ 最低 17°C
+🧍 体感温度：29°C～19°C
+🌧️ 降水
+ 確率：4%
+💧 湿度（日平均）：72%
+💨 最大風速：8 km
+ /h
+☀️ UV指数（最大）：5.6
+🌅 日の出：06:00 ／ 日
+ の入り：17:27
+🌓 月相：三日月～上弦前 ／ 月齢：
+ 約 1.9 日 ／ 照明率：約 4%
+🌡️ 気圧（海面更正・
+ 日平均）：1020 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-13@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:🌦️ 26°C～17°C
-DESCRIPTION:🌦️ 霧雨（大阪市）\\n🌡️ 気温：最高 26
- °C ／ 最低 17°C\\n🧍 体感温度：29°C～18°C\\n🌧️ 
- 降水確率：22%\\n💧 湿度（日平均）：79%\\n💨 最大
- 風速：11 km/h\\n☀️ UV指数（最大）：5.8\\n🌅 日の出
- ：06:01 ／ 日の入り：17:26\\n🌓 月相：三日月～上弦
- 前 ／ 月齢：約 2.9 日 ／ 照明率：約 9%\\n🌡️ 気圧
- （海面更正・日平均）：1017 hPa\\n\\nデータ：Open-Meteo
- （天気予報）
+DESCRIPTION:🌦️ 霧雨（大阪市）
+🌡️ 気温：最高 26°
+ C ／ 最低 17°C
+🧍 体感温度：29°C～18°C
+🌧️ 降水
+ 確率：22%
+💧 湿度（日平均）：79%
+💨 最大風速：11 
+ km/h
+☀️ UV指数（最大）：5.8
+🌅 日の出：06:01 ／ 日
+ の入り：17:26
+🌓 月相：三日月～上弦前 ／ 月齢：
+ 約 2.9 日 ／ 照明率：約 9%
+🌡️ 気圧（海面更正・
+ 日平均）：1017 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-14@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261014
 DTEND;VALUE=DATE:20261015
 SUMMARY:🌦️ 25°C～18°C
-DESCRIPTION:🌦️ 弱いにわか雨（大阪市）\\n🌡️ 気温
- ：最高 25°C ／ 最低 18°C\\n🧍 体感温度：26°C～18°C\
- \n🌧️ 降水確率：92%\\n💧 湿度（日平均）：82%\\n
- 💨 最大風速：14 km/h\\n☀️ UV指数（最大）：5.0\\n
- 🌅 日の出：06:02 ／ 日の入り：17:25\\n🌓 月相：三
- 日月～上弦前 ／ 月齢：約 3.9 日 ／ 照明率：約 16%\\
- n🌡️ 気圧（海面更正・日平均）：1011 hPa\\n\\nデー
- タ：Open-Meteo（天気予報）
+DESCRIPTION:🌦️ 弱いにわか雨（大阪市）
+🌡️ 気温
+ ：最高 25°C ／ 最低 18°C
+🧍 体感温度：26°C～18°C
+
+ 🌧️ 降水確率：92%
+💧 湿度（日平均）：82%
+💨 最
+ 大風速：14 km/h
+☀️ UV指数（最大）：5.0
+🌅 日の出
+ ：06:02 ／ 日の入り：17:25
+🌓 月相：三日月～上弦前
+  ／ 月齢：約 3.9 日 ／ 照明率：約 16%
+🌡️ 気圧（
+ 海面更正・日平均）：1011 hPa
+
+データ：Open-Meteo（天
+ 気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-15@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:🌤️ 23°C～15°C
-DESCRIPTION:🌤️ 晴れ（大阪市）\\n🌡️ 気温：最高 23
- °C ／ 最低 15°C\\n🧍 体感温度：24°C～15°C\\n🌧️ 
- 降水確率：4%\\n💧 湿度（日平均）：70%\\n💨 最大風
- 速：6 km/h\\n☀️ UV指数（最大）：5.3\\n🌅 日の出：0
- 6:03 ／ 日の入り：17:24\\n🌓 月相：三日月～上弦前 
- ／ 月齢：約 4.9 日 ／ 照明率：約 25%\\n🌡️ 気圧（
- 海面更正・日平均）：1018 hPa\\n\\nデータ：Open-Meteo（
- 天気予報）
+DESCRIPTION:🌤️ 晴れ（大阪市）
+🌡️ 気温：最高 23°
+ C ／ 最低 15°C
+🧍 体感温度：24°C～15°C
+🌧️ 降水
+ 確率：4%
+💧 湿度（日平均）：70%
+💨 最大風速：6 km
+ /h
+☀️ UV指数（最大）：5.3
+🌅 日の出：06:03 ／ 日
+ の入り：17:24
+🌓 月相：三日月～上弦前 ／ 月齢：
+ 約 4.9 日 ／ 照明率：約 25%
+🌡️ 気圧（海面更正・
+ 日平均）：1018 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-16@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:☁️ 24°C～14°C
-DESCRIPTION:☁️ くもり（大阪市）\\n🌡️ 気温：最高 
- 24°C ／ 最低 14°C\\n🧍 体感温度：24°C～14°C\\n🌧️ 
- 降水確率：12%\\n💧 湿度（日平均）：75%\\n💨 最大
- 風速：6 km/h\\n☀️ UV指数（最大）：5.0\\n🌅 日の出
- ：06:04 ／ 日の入り：17:22\\n🌓 月相：三日月～上弦
- 前 ／ 月齢：約 5.9 日 ／ 照明率：約 34%\\n🌡️ 気圧
- （海面更正・日平均）：1022 hPa\\n\\nデータ：Open-Meteo
- （天気予報）
+DESCRIPTION:☁️ くもり（大阪市）
+🌡️ 気温：最高 24
+ °C ／ 最低 14°C
+🧍 体感温度：24°C～14°C
+🌧️ 降水
+ 確率：12%
+💧 湿度（日平均）：75%
+💨 最大風速：6 k
+ m/h
+☀️ UV指数（最大）：5.0
+🌅 日の出：06:04 ／ 日
+ の入り：17:22
+🌓 月相：三日月～上弦前 ／ 月齢：
+ 約 5.9 日 ／ 照明率：約 34%
+🌡️ 気圧（海面更正・
+ 日平均）：1022 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-17@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:☁️ 26°C～15°C
-DESCRIPTION:☁️ くもり（大阪市）\\n🌡️ 気温：最高 
- 26°C ／ 最低 15°C\\n🧍 体感温度：27°C～16°C\\n🌧️ 
- 降水確率：20%\\n💧 湿度（日平均）：73%\\n💨 最大
- 風速：8 km/h\\n☀️ UV指数（最大）：4.9\\n🌅 日の出
- ：06:04 ／ 日の入り：17:21\\n🌓 月相：上弦 ／ 月齢
- ：約 6.9 日 ／ 照明率：約 45%\\n🌡️ 気圧（海面更
- 正・日平均）：1024 hPa\\n\\nデータ：Open-Meteo（天気予
- 報）
+DESCRIPTION:☁️ くもり（大阪市）
+🌡️ 気温：最高 26
+ °C ／ 最低 15°C
+🧍 体感温度：27°C～16°C
+🌧️ 降水
+ 確率：20%
+💧 湿度（日平均）：73%
+💨 最大風速：8 k
+ m/h
+☀️ UV指数（最大）：4.9
+🌅 日の出：06:04 ／ 日
+ の入り：17:21
+🌓 月相：上弦 ／ 月齢：約 6.9 日 ／ 
+ 照明率：約 45%
+🌡️ 気圧（海面更正・日平均）：10
+ 24 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-18@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:🌦️ 26°C～16°C
-DESCRIPTION:🌦️ 弱い霧雨（大阪市）\\n🌡️ 気温：最
- 高 26°C ／ 最低 16°C\\n🧍 体感温度：26°C～16°C\\n🌧
- ️ 降水確率：27%\\n💧 湿度（日平均）：69%\\n💨 最
- 大風速：6 km/h\\n☀️ UV指数（最大）：5.2\\n🌅 日の
- 出：06:05 ／ 日の入り：17:20\\n🌓 月相：上弦 ／ 月
- 齢：約 7.9 日 ／ 照明率：約 55%\\n🌡️ 気圧（海面
- 更正・日平均）：1024 hPa\\n\\nデータ：Open-Meteo（天気
- 予報）
+DESCRIPTION:🌦️ 弱い霧雨（大阪市）
+🌡️ 気温：最
+ 高 26°C ／ 最低 16°C
+🧍 体感温度：26°C～16°C
+🌧️ 
+ 降水確率：27%
+💧 湿度（日平均）：69%
+💨 最大風速
+ ：6 km/h
+☀️ UV指数（最大）：5.2
+🌅 日の出：06:05 
+ ／ 日の入り：17:20
+🌓 月相：上弦 ／ 月齢：約 7.9 
+ 日 ／ 照明率：約 55%
+🌡️ 気圧（海面更正・日平均
+ ）：1024 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-19@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:🌧️ 25°C～19°C
-DESCRIPTION:🌧️ 強い霧雨（大阪市）\\n🌡️ 気温：最
- 高 25°C ／ 最低 19°C\\n🧍 体感温度：26°C～20°C\\n🌧
- ️ 降水確率：39%\\n💧 湿度（日平均）：73%\\n💨 最
- 大風速：8 km/h\\n☀️ UV指数（最大）：2.9\\n🌅 日の
- 出：06:06 ／ 日の入り：17:19\\n🌓 月相：満ちていく
- 月 ／ 月齢：約 8.9 日 ／ 照明率：約 66%\\n🌡️ 気圧
- （海面更正・日平均）：1020 hPa\\n\\nデータ：Open-Meteo
- （天気予報）
+DESCRIPTION:🌧️ 強い霧雨（大阪市）
+🌡️ 気温：最
+ 高 25°C ／ 最低 19°C
+🧍 体感温度：26°C～20°C
+🌧️ 
+ 降水確率：39%
+💧 湿度（日平均）：73%
+💨 最大風速
+ ：8 km/h
+☀️ UV指数（最大）：2.9
+🌅 日の出：06:06 
+ ／ 日の入り：17:19
+🌓 月相：満ちていく月 ／ 月齢
+ ：約 8.9 日 ／ 照明率：約 66%
+🌡️ 気圧（海面更正
+ ・日平均）：1020 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-20@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:🌧️ 22°C～18°C
-DESCRIPTION:🌧️ 強い霧雨（大阪市）\\n🌡️ 気温：最
- 高 22°C ／ 最低 18°C\\n🧍 体感温度：23°C～19°C\\n🌧
- ️ 降水確率：45%\\n💧 湿度（日平均）：86%\\n💨 最
- 大風速：12 km/h\\n☀️ UV指数（最大）：3.5\\n🌅 日の
- 出：06:07 ／ 日の入り：17:17\\n🌓 月相：満ちていく
- 月 ／ 月齢：約 9.9 日 ／ 照明率：約 75%\\n🌡️ 気圧
- （海面更正・日平均）：1016 hPa\\n\\nデータ：Open-Meteo
- （天気予報）
+DESCRIPTION:🌧️ 強い霧雨（大阪市）
+🌡️ 気温：最
+ 高 22°C ／ 最低 18°C
+🧍 体感温度：23°C～19°C
+🌧️ 
+ 降水確率：45%
+💧 湿度（日平均）：86%
+💨 最大風速
+ ：12 km/h
+☀️ UV指数（最大）：3.5
+🌅 日の出：06:07 
+ ／ 日の入り：17:17
+🌓 月相：満ちていく月 ／ 月齢
+ ：約 9.9 日 ／ 照明率：約 75%
+🌡️ 気圧（海面更正
+ ・日平均）：1016 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-21@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:⛈️ 26°C～20°C
-DESCRIPTION:⛈️ 雷雨（大阪市）\\n🌡️ 気温：最高 26
- °C ／ 最低 20°C\\n🧍 体感温度：30°C～20°C\\n🌧️ 
- 降水確率：34%\\n💧 湿度（日平均）：79%\\n💨 最大
- 風速：15 km/h\\n☀️ UV指数（最大）：3.7\\n🌅 日の出
- ：06:08 ／ 日の入り：17:16\\n🌓 月相：満ちていく月 
- ／ 月齢：約 10.9 日 ／ 照明率：約 84%\\n🌡️ 気圧（
- 海面更正・日平均）：1012 hPa\\n\\nデータ：Open-Meteo（
- 天気予報）
+DESCRIPTION:⛈️ 雷雨（大阪市）
+🌡️ 気温：最高 26°C
+  ／ 最低 20°C
+🧍 体感温度：30°C～20°C
+🌧️ 降水確
+ 率：34%
+💧 湿度（日平均）：79%
+💨 最大風速：15 km/
+ h
+☀️ UV指数（最大）：3.7
+🌅 日の出：06:08 ／ 日の
+ 入り：17:16
+🌓 月相：満ちていく月 ／ 月齢：約 10.9
+  日 ／ 照明率：約 84%
+🌡️ 気圧（海面更正・日平
+ 均）：1012 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-22@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:☁️ 22°C～15°C
-DESCRIPTION:☁️ くもり（大阪市）\\n🌡️ 気温：最高 
- 22°C ／ 最低 15°C\\n🧍 体感温度：24°C～14°C\\n🌧️ 
- 降水確率：29%\\n💧 湿度（日平均）：68%\\n💨 最大
- 風速：12 km/h\\n☀️ UV指数（最大）：3.4\\n🌅 日の出
- ：06:09 ／ 日の入り：17:15\\n🌓 月相：満ちていく月 
- ／ 月齢：約 11.9 日 ／ 照明率：約 91%\\n🌡️ 気圧（
- 海面更正・日平均）：1014 hPa\\n\\nデータ：Open-Meteo（
- 天気予報）
+DESCRIPTION:☁️ くもり（大阪市）
+🌡️ 気温：最高 22
+ °C ／ 最低 15°C
+🧍 体感温度：24°C～14°C
+🌧️ 降水
+ 確率：29%
+💧 湿度（日平均）：68%
+💨 最大風速：12 
+ km/h
+☀️ UV指数（最大）：3.4
+🌅 日の出：06:09 ／ 日
+ の入り：17:15
+🌓 月相：満ちていく月 ／ 月齢：約 1
+ 1.9 日 ／ 照明率：約 91%
+🌡️ 気圧（海面更正・日
+ 平均）：1014 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-23@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:☁️ 18°C～14°C
-DESCRIPTION:☁️ くもり（大阪市）\\n🌡️ 気温：最高 
- 18°C ／ 最低 14°C\\n🧍 体感温度：18°C～14°C\\n🌧️ 
- 降水確率：20%\\n💧 湿度（日平均）：77%\\n💨 最大
- 風速：7 km/h\\n☀️ UV指数（最大）：5.0\\n🌅 日の出
- ：06:10 ／ 日の入り：17:14\\n🌓 月相：満ちていく月 
- ／ 月齢：約 12.9 日 ／ 照明率：約 96%\\n🌡️ 気圧（
- 海面更正・日平均）：1015 hPa\\n\\nデータ：Open-Meteo（
- 天気予報）
+DESCRIPTION:☁️ くもり（大阪市）
+🌡️ 気温：最高 18
+ °C ／ 最低 14°C
+🧍 体感温度：18°C～14°C
+🌧️ 降水
+ 確率：20%
+💧 湿度（日平均）：77%
+💨 最大風速：7 k
+ m/h
+☀️ UV指数（最大）：5.0
+🌅 日の出：06:10 ／ 日
+ の入り：17:14
+🌓 月相：満ちていく月 ／ 月齢：約 1
+ 2.9 日 ／ 照明率：約 96%
+🌡️ 気圧（海面更正・日
+ 平均）：1015 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-24@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:☁️ 24°C～17°C
-DESCRIPTION:☁️ くもり（大阪市）\\n🌡️ 気温：最高 
- 24°C ／ 最低 17°C\\n🧍 体感温度：23°C～17°C\\n🌧️ 
- 降水確率：14%\\n💧 湿度（日平均）：62%\\n💨 最大
- 風速：17 km/h\\n☀️ UV指数（最大）：4.7\\n🌅 日の出
- ：06:10 ／ 日の入り：17:13\\n🌓 月相：満ちていく月 
- ／ 月齢：約 13.9 日 ／ 照明率：約 99%\\n🌡️ 気圧（
- 海面更正・日平均）：1019 hPa\\n\\nデータ：Open-Meteo（
- 天気予報）
+DESCRIPTION:☁️ くもり（大阪市）
+🌡️ 気温：最高 24
+ °C ／ 最低 17°C
+🧍 体感温度：23°C～17°C
+🌧️ 降水
+ 確率：14%
+💧 湿度（日平均）：62%
+💨 最大風速：17 
+ km/h
+☀️ UV指数（最大）：4.7
+🌅 日の出：06:10 ／ 日
+ の入り：17:13
+🌓 月相：満ちていく月 ／ 月齢：約 1
+ 3.9 日 ／ 照明率：約 99%
+🌡️ 気圧（海面更正・日
+ 平均）：1019 hPa
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-25@osaka-weather-calendar
-DTSTAMP:20261009T161711Z
+DTSTAMP:20261009T161818Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:🌡️ —～—
-DESCRIPTION:🌡️ 天気情報（大阪市）\\n🌡️ 気温：最
- 高 — ／ 最低 —\\n🧍 体感温度：—\\n🌧️ 降水確
- 率：23%\\n💧 湿度（日平均）：56%\\n💨 最大風速：
- —\\n☀️ UV指数（最大）：—\\n🌅 日の出：06:11 ／ 
- 日の入り：17:11\\n🌓 月相：満月 ／ 月齢：約 14.9 日
-  ／ 照明率：約 100%\\n🌡️ 気圧（海面更正・日平均
- ）：1023 hPa\\n\\nデータ：Open-Meteo（天気予報）
+DESCRIPTION:🌡️ 天気情報（大阪市）
+🌡️ 気温：最
+ 高 — ／ 最低 —
+🧍 体感温度：—
+🌧️ 降水確率
+ ：23%
+💧 湿度（日平均）：56%
+💨 最大風速：—
+☀
+ ️ UV指数（最大）：—
+🌅 日の出：06:11 ／ 日の入
+ り：17:11
+🌓 月相：満月 ／ 月齢：約 14.9 日 ／ 照明
+ 率：約 100%
+🌡️ 気圧（海面更正・日平均）：1023 hP
+ a
+
+データ：Open-Meteo（天気予報）
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR
