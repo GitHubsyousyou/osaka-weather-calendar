@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:osaka-weather-2026-09-25@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:☁️ 31°C～21°C
@@ -20,7 +20,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-09-26@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260927
 SUMMARY:🌦️ 25°C～21°C
@@ -31,7 +31,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-09-27@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20260927
 DTEND;VALUE=DATE:20260928
 SUMMARY:🌦️ 26°C～21°C
@@ -42,7 +42,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-09-28@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20260929
 SUMMARY:🌧️ 26°C～23°C
@@ -53,7 +53,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-09-29@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20260930
 SUMMARY:🌧️ 23°C～19°C
@@ -64,7 +64,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-09-30@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261001
 SUMMARY:☁️ 26°C～17°C
@@ -75,7 +75,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-01@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:☁️ 27°C～17°C
@@ -86,7 +86,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-02@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:⛅ 25°C～19°C
@@ -97,7 +97,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-03@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261004
 SUMMARY:☁️ 25°C～16°C
@@ -108,7 +108,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-04@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261005
 SUMMARY:🌦️ 22°C～18°C
@@ -119,233 +119,233 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-05@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261006
 SUMMARY:🌧️ 20°C～18°C
 DESCRIPTION:🌧️ Moderate rain\n🌡️ High 20°C · Low 18°C\n
- 🌧️ Precipitation chance —\n🌅 Sunrise — · Sunset —\n
- 💧 Humidity —\n\nOsaka · Data: Open-Meteo (近期模型数据)
+ 🌧️ Precipitation chance 87%\n🌅 Sunrise 05:55 · Sunset 17:37\
+ n💧 Humidity 92%\n\nOsaka · Data: Open-Meteo (近期模型数据)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-06@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:☁️ 25°C～19°C
 DESCRIPTION:☁️ Overcast\n🌡️ High 25°C · Low 19°C\n🌧️ 
- Precipitation chance —\n🌅 Sunrise — · Sunset —\n💧 Humidi
- ty —\n\nOsaka · Data: Open-Meteo (近期模型数据)
+ Precipitation chance 49%\n🌅 Sunrise 05:56 · Sunset 17:35\n💧 Hu
+ midity 73%\n\nOsaka · Data: Open-Meteo (近期模型数据)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-07@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:🌤️ 24°C～16°C
 DESCRIPTION:🌤️ Mainly clear\n🌡️ High 24°C · Low 16°C\n
- 🌧️ Precipitation chance —\n🌅 Sunrise — · Sunset —\n
- 💧 Humidity —\n\nOsaka · Data: Open-Meteo (近期模型数据)
+ 🌧️ Precipitation chance 0%\n🌅 Sunrise 05:56 · Sunset 17:34\n
+ 💧 Humidity 62%\n\nOsaka · Data: Open-Meteo (近期模型数据)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-08@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
 SUMMARY:☀️ 26°C～14°C
 DESCRIPTION:☀️ Clear sky\n🌡️ High 26°C · Low 14°C\n🌧️
-  Precipitation chance —\n🌅 Sunrise — · Sunset —\n💧 Humid
- ity —\n\nOsaka · Data: Open-Meteo (近期模型数据)
+  Precipitation chance 0%\n🌅 Sunrise 05:57 · Sunset 17:33\n💧 Hu
+ midity 65%\n\nOsaka · Data: Open-Meteo (近期模型数据)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-09@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:🌤️ 28°C～17°C
 DESCRIPTION:🌤️ Mainly clear\n🌡️ High 28°C · Low 17°C\n
- 🌧️ Precipitation chance —\n🌅 Sunrise — · Sunset —\n
- 💧 Humidity —\n\nOsaka · Data: Open-Meteo (近期模型数据)
+ 🌧️ Precipitation chance 0%\n🌅 Sunrise 05:58 · Sunset 17:31\n
+ 💧 Humidity 68%\n\nOsaka · Data: Open-Meteo (近期模型数据)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-10@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:🌤️ 27°C～17°C
 DESCRIPTION:🌤️ Mainly clear\n🌡️ High 27°C · Low 17°C\n
- 🌧️ Precipitation chance —\n🌅 Sunrise — · Sunset —\n
- 💧 Humidity —\n\nOsaka · Data: Open-Meteo (天气预报)
+ 🌧️ Precipitation chance 0%\n🌅 Sunrise 05:59 · Sunset 17:30\n
+ 💧 Humidity 74%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-11@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
 SUMMARY:☀️ 28°C～17°C
 DESCRIPTION:☀️ Clear sky\n🌡️ High 28°C · Low 17°C\n🌧️
-  Precipitation chance —\n🌅 Sunrise — · Sunset —\n💧 Humid
- ity —\n\nOsaka · Data: Open-Meteo (天气预报)
+  Precipitation chance 0%\n🌅 Sunrise 06:00 · Sunset 17:29\n💧 Hu
+ midity 71%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-12@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 SUMMARY:🌤️ 27°C～17°C
 DESCRIPTION:🌤️ Mainly clear\n🌡️ High 27°C · Low 17°C\n
- 🌧️ Precipitation chance —\n🌅 Sunrise — · Sunset —\n
- 💧 Humidity —\n\nOsaka · Data: Open-Meteo (天气预报)
+ 🌧️ Precipitation chance 4%\n🌅 Sunrise 06:00 · Sunset 17:27\n
+ 💧 Humidity 72%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-13@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:🌦️ 26°C～17°C
 DESCRIPTION:🌦️ Moderate drizzle\n🌡️ High 26°C · Low 17°C\
- n🌧️ Precipitation chance —\n🌅 Sunrise — · Sunset —\n
- 💧 Humidity —\n\nOsaka · Data: Open-Meteo (天气预报)
+ n🌧️ Precipitation chance 22%\n🌅 Sunrise 06:01 · Sunset 17:26
+ \n💧 Humidity 79%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-14@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261014
 DTEND;VALUE=DATE:20261015
 SUMMARY:🌦️ 25°C～18°C
 DESCRIPTION:🌦️ Slight rain showers\n🌡️ High 25°C · Low 18
- °C\n🌧️ Precipitation chance —\n🌅 Sunrise — · Sunset —
- \n💧 Humidity —\n\nOsaka · Data: Open-Meteo (天气预报)
+ °C\n🌧️ Precipitation chance 92%\n🌅 Sunrise 06:02 · Sunset 1
+ 7:25\n💧 Humidity 82%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-15@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:🌤️ 23°C～15°C
 DESCRIPTION:🌤️ Mainly clear\n🌡️ High 23°C · Low 15°C\n
- 🌧️ Precipitation chance —\n🌅 Sunrise — · Sunset —\n
- 💧 Humidity —\n\nOsaka · Data: Open-Meteo (天气预报)
+ 🌧️ Precipitation chance 4%\n🌅 Sunrise 06:03 · Sunset 17:24\n
+ 💧 Humidity 70%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-16@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:☁️ 24°C～14°C
 DESCRIPTION:☁️ Overcast\n🌡️ High 24°C · Low 14°C\n🌧️ 
- Precipitation chance —\n🌅 Sunrise — · Sunset —\n💧 Humidi
- ty —\n\nOsaka · Data: Open-Meteo (天气预报)
+ Precipitation chance 12%\n🌅 Sunrise 06:04 · Sunset 17:22\n💧 Hu
+ midity 75%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-17@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:☁️ 26°C～15°C
 DESCRIPTION:☁️ Overcast\n🌡️ High 26°C · Low 15°C\n🌧️ 
- Precipitation chance —\n🌅 Sunrise — · Sunset —\n💧 Humidi
- ty —\n\nOsaka · Data: Open-Meteo (天气预报)
+ Precipitation chance 20%\n🌅 Sunrise 06:04 · Sunset 17:21\n💧 Hu
+ midity 73%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-18@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 SUMMARY:🌦️ 26°C～16°C
 DESCRIPTION:🌦️ Light drizzle\n🌡️ High 26°C · Low 16°C\n
- 🌧️ Precipitation chance —\n🌅 Sunrise — · Sunset —\n
- 💧 Humidity —\n\nOsaka · Data: Open-Meteo (天气预报)
+ 🌧️ Precipitation chance 27%\n🌅 Sunrise 06:05 · Sunset 17:20\
+ n💧 Humidity 69%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-19@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:🌧️ 25°C～19°C
 DESCRIPTION:🌧️ Dense drizzle\n🌡️ High 25°C · Low 19°C\n
- 🌧️ Precipitation chance —\n🌅 Sunrise — · Sunset —\n
- 💧 Humidity —\n\nOsaka · Data: Open-Meteo (天气预报)
+ 🌧️ Precipitation chance 39%\n🌅 Sunrise 06:06 · Sunset 17:19\
+ n💧 Humidity 73%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-20@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:🌧️ 22°C～18°C
 DESCRIPTION:🌧️ Dense drizzle\n🌡️ High 22°C · Low 18°C\n
- 🌧️ Precipitation chance —\n🌅 Sunrise — · Sunset —\n
- 💧 Humidity —\n\nOsaka · Data: Open-Meteo (天气预报)
+ 🌧️ Precipitation chance 45%\n🌅 Sunrise 06:07 · Sunset 17:17\
+ n💧 Humidity 86%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-21@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:⛈️ 26°C～20°C
 DESCRIPTION:⛈️ Thunderstorm\n🌡️ High 26°C · Low 20°C\n🌧
- ️ Precipitation chance —\n🌅 Sunrise — · Sunset —\n💧 Hu
- midity —\n\nOsaka · Data: Open-Meteo (天气预报)
+ ️ Precipitation chance 34%\n🌅 Sunrise 06:08 · Sunset 17:16\n
+ 💧 Humidity 79%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-22@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:☁️ 22°C～15°C
 DESCRIPTION:☁️ Overcast\n🌡️ High 22°C · Low 15°C\n🌧️ 
- Precipitation chance —\n🌅 Sunrise — · Sunset —\n💧 Humidi
- ty —\n\nOsaka · Data: Open-Meteo (天气预报)
+ Precipitation chance 29%\n🌅 Sunrise 06:09 · Sunset 17:15\n💧 Hu
+ midity 68%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-23@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:☁️ 18°C～14°C
 DESCRIPTION:☁️ Overcast\n🌡️ High 18°C · Low 14°C\n🌧️ 
- Precipitation chance —\n🌅 Sunrise — · Sunset —\n💧 Humidi
- ty —\n\nOsaka · Data: Open-Meteo (天气预报)
+ Precipitation chance 20%\n🌅 Sunrise 06:10 · Sunset 17:14\n💧 Hu
+ midity 77%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-24@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:☁️ 24°C～17°C
 DESCRIPTION:☁️ Overcast\n🌡️ High 24°C · Low 17°C\n🌧️ 
- Precipitation chance —\n🌅 Sunrise — · Sunset —\n💧 Humidi
- ty —\n\nOsaka · Data: Open-Meteo (天气预报)
+ Precipitation chance 14%\n🌅 Sunrise 06:10 · Sunset 17:13\n💧 Hu
+ midity 62%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:osaka-weather-2026-10-25@osaka-weather-calendar
-DTSTAMP:20261009T155046Z
+DTSTAMP:20261009T155120Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
 SUMMARY:🌡️ —～—
 DESCRIPTION:🌡️ 天气状况\n🌡️ High — · Low —\n🌧️
-  Precipitation chance —\n🌅 Sunrise — · Sunset —\n💧 Humid
- ity —\n\nOsaka · Data: Open-Meteo (天气预报)
+  Precipitation chance 23%\n🌅 Sunrise 06:11 · Sunset 17:11\n💧 H
+ umidity 56%\n\nOsaka · Data: Open-Meteo (天气预报)
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR
