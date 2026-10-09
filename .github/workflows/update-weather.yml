@@ -7,8 +7,8 @@ on:
       - ".github/workflows/update-weather.yml"
   workflow_dispatch:
   schedule:
-    # Every day at 00:20 UTC = 09:20 Japan time
-    - cron: "20 0 * * *"
+    # Every day at 06:00 Japan time
+    - cron: "0 21 * * *"
 
 permissions:
   contents: write
