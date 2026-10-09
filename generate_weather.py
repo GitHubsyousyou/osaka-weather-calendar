@@ -62,7 +62,7 @@ def weather_info(code):
         return ("🌡️", "天気情報")
 
 def escape_ics(s):
-    return str(s).replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+    return str(s).replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\n")
 
 def fold_line(line, limit=70):
     out, current, count = [], "", 0
@@ -102,7 +102,7 @@ def moon_info(day):
     return age, illumination, name
 
 def event(day, row, source):
-    values = row if row else (None,) * 11
+    values = row if row else (None,) * 12
     code, high, low, rain, humidity, sunrise, sunset, feels_high, feels_low, wind, uv, pressure = values
     icon, desc = weather_info(code)
     high_s = "—" if high is None else f"{round(float(high))}°C"
@@ -118,16 +118,16 @@ def event(day, row, source):
     moon_age, moon_light, moon_name = moon_info(day)
     summary = f"{icon} {high_s}～{low_s}"
     description = (
-        f"{icon} {desc}（大阪市）\\n"
-        f"🌡️ 気温：最高 {high_s} ／ 最低 {low_s}\\n"
-        f"🧍 体感温度：{feel_s}\\n"
-        f"🌧️ 降水確率：{rain_s}\\n"
-        f"💧 湿度（日平均）：{humidity_s}\\n"
-        f"💨 最大風速：{wind_s}\\n"
-        f"☀️ UV指数（最大）：{uv_s}\\n"
-        f"🌅 日の出：{sunrise_s} ／ 日の入り：{sunset_s}\\n"
-        f"🌓 月相：{moon_name} ／ 月齢：約 {moon_age:.1f} 日 ／ 照明率：約 {moon_light:.0f}%\\n"
-        f"🌡️ 気圧（海面更正・日平均）：{pressure_s}\\n\\n"
+        f"{icon} {desc}（大阪市）\n"
+        f"🌡️ 気温：最高 {high_s} ／ 最低 {low_s}\n"
+        f"🧍 体感温度：{feel_s}\n"
+        f"🌧️ 降水確率：{rain_s}\n"
+        f"💧 湿度（日平均）：{humidity_s}\n"
+        f"💨 最大風速：{wind_s}\n"
+        f"☀️ UV指数（最大）：{uv_s}\n"
+        f"🌅 日の出：{sunrise_s} ／ 日の入り：{sunset_s}\n"
+        f"🌓 月相：{moon_name} ／ 月齢：約 {moon_age:.1f} 日 ／ 照明率：約 {moon_light:.0f}%\n"
+        f"🌡️ 気圧（海面更正・日平均）：{pressure_s}\n\n"
         f"データ：Open-Meteo（{source}）"
     )
     uid = f"osaka-weather-{day.isoformat()}@osaka-weather-calendar"
