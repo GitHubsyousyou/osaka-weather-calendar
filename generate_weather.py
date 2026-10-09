@@ -77,8 +77,33 @@ def fold_line(line, limit=70):
     out.append(current)
     return "\r\n".join(out)
 
+def moon_info(day):
+    # Approximate lunar age/phase using a known new-moon epoch and mean synodic month.
+    epoch = datetime(2000, 1, 6, 18, 14, tzinfo=timezone.utc).date()
+    age = ((day - epoch).days + 0.5) % 29.530588853
+    phase = (age / 29.530588853) % 1.0
+    illumination = (1 - __import__("math").cos(2 * __import__("math").pi * phase)) * 50
+    if phase < 0.03 or phase >= 0.97:
+        name = "新月"
+    elif phase < 0.22:
+        name = "三日月～上弦前"
+    elif phase < 0.28:
+        name = "上弦"
+    elif phase < 0.47:
+        name = "満ちていく月"
+    elif phase < 0.53:
+        name = "満月"
+    elif phase < 0.72:
+        name = "欠けていく月"
+    elif phase < 0.78:
+        name = "下弦"
+    else:
+        name = "有明月"
+    return age, illumination, name
+
 def event(day, row, source):
-    code, high, low, rain, humidity, sunrise, sunset = row if row else (None, None, None, None, None, None, None)
+    values = row if row else (None,) * 11
+    code, high, low, rain, humidity, sunrise, sunset, feels_high, feels_low, wind, uv, pressure = values
     icon, desc = weather_info(code)
     high_s = "—" if high is None else f"{round(float(high))}°C"
     low_s = "—" if low is None else f"{round(float(low))}°C"
@@ -86,14 +111,24 @@ def event(day, row, source):
     humidity_s = "—" if humidity is None else f"{round(float(humidity))}%"
     sunrise_s = "—" if not sunrise else str(sunrise)[11:16]
     sunset_s = "—" if not sunset else str(sunset)[11:16]
+    feel_s = "—" if feels_high is None or feels_low is None else f"{round(float(feels_high))}°C～{round(float(feels_low))}°C"
+    wind_s = "—" if wind is None else f"{round(float(wind))} km/h"
+    uv_s = "—" if uv is None else f"{float(uv):.1f}"
+    pressure_s = "—" if pressure is None else f"{round(float(pressure))} hPa"
+    moon_age, moon_light, moon_name = moon_info(day)
     summary = f"{icon} {high_s}～{low_s}"
     description = (
-        f"{icon} {desc}\n"
-        f"🌡️ 最高 {high_s} ／ 最低 {low_s}\n"
-        f"🌧️ 降水確率 {rain_s}\n"
-        f"🌅 日の出 {sunrise_s} ／ 日の入り {sunset_s}\n"
-        f"💧 湿度 {humidity_s}\n\n"
-        f"大阪市 · データ：Open-Meteo（{source}）"
+        f"{icon} {desc}（大阪市）\\n"
+        f"🌡️ 気温：最高 {high_s} ／ 最低 {low_s}\\n"
+        f"🧍 体感温度：{feel_s}\\n"
+        f"🌧️ 降水確率：{rain_s}\\n"
+        f"💧 湿度（日平均）：{humidity_s}\\n"
+        f"💨 最大風速：{wind_s}\\n"
+        f"☀️ UV指数（最大）：{uv_s}\\n"
+        f"🌅 日の出：{sunrise_s} ／ 日の入り：{sunset_s}\\n"
+        f"🌓 月相：{moon_name} ／ 月齢：約 {moon_age:.1f} 日 ／ 照明率：約 {moon_light:.0f}%\\n"
+        f"🌡️ 気圧（海面更正・日平均）：{pressure_s}\\n\\n"
+        f"データ：Open-Meteo（{source}）"
     )
     uid = f"osaka-weather-{day.isoformat()}@osaka-weather-calendar"
     dtstamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -112,24 +147,35 @@ def today_jst():
 def read_daily(data):
     daily = data.get("daily", {})
     hourly = data.get("hourly", {})
-    humidity_by_day = {}
-    for timestamp, humidity in zip(hourly.get("time", []), hourly.get("relative_humidity_2m", [])):
-        if humidity is not None:
-            humidity_by_day.setdefault(date.fromisoformat(timestamp[:10]), []).append(float(humidity))
+    grouped = {}
+    for field in ("relative_humidity_2m", "pressure_msl"):
+        for timestamp, value in zip(hourly.get("time", []), hourly.get(field, [])):
+            if value is not None:
+                grouped.setdefault((date.fromisoformat(timestamp[:10]), field), []).append(float(value))
+    def daily_value(field, i):
+        values = daily.get(field, [])
+        return values[i] if i < len(values) else None
     result = {}
     times = daily.get("time", [])
     for i, ds in enumerate(times):
         day = date.fromisoformat(ds)
-        humidities = humidity_by_day.get(day, [])
+        humidities = grouped.get((day, "relative_humidity_2m"), [])
+        pressures = grouped.get((day, "pressure_msl"), [])
         humidity = round(sum(humidities) / len(humidities)) if humidities else None
+        pressure = sum(pressures) / len(pressures) if pressures else None
         result[day] = (
-            daily.get("weather_code", [None] * len(times))[i],
-            daily.get("temperature_2m_max", [None] * len(times))[i],
-            daily.get("temperature_2m_min", [None] * len(times))[i],
-            daily.get("precipitation_probability_max", [None] * len(times))[i],
+            daily_value("weather_code", i),
+            daily_value("temperature_2m_max", i),
+            daily_value("temperature_2m_min", i),
+            daily_value("precipitation_probability_max", i),
             humidity,
-            daily.get("sunrise", [None] * len(times))[i],
-            daily.get("sunset", [None] * len(times))[i],
+            daily_value("sunrise", i),
+            daily_value("sunset", i),
+            daily_value("apparent_temperature_max", i),
+            daily_value("apparent_temperature_min", i),
+            daily_value("wind_speed_10m_max", i),
+            daily_value("uv_index_max", i),
+            pressure,
         )
     return result
 
@@ -145,8 +191,8 @@ def main():
         params = {
             "latitude": LAT, "longitude": LON,
             "start_date": past_start.isoformat(), "end_date": older_end.isoformat(),
-            "daily": "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunrise,sunset",
-            "hourly": "relative_humidity_2m",
+            "daily": "weather_code,temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,precipitation_probability_max,wind_speed_10m_max,uv_index_max,sunrise,sunset",
+            "hourly": "relative_humidity_2m,pressure_msl",
             "timezone": TZ, "temperature_unit": "celsius",
         }
         data_by_day.update(read_daily(get_json(api_url("https://archive-api.open-meteo.com/v1/archive", params))))
@@ -155,8 +201,8 @@ def main():
     # Recent past and forecast, avoiding the historical archive's normal publication delay.
     params = {
         "latitude": LAT, "longitude": LON,
-        "daily": "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunrise,sunset",
-        "hourly": "relative_humidity_2m",
+        "daily": "weather_code,temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,precipitation_probability_max,wind_speed_10m_max,uv_index_max,sunrise,sunset",
+        "hourly": "relative_humidity_2m,pressure_msl",
         "timezone": TZ, "temperature_unit": "celsius",
         "past_days": 5, "forecast_days": 16,
     }
