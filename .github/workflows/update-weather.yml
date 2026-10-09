@@ -1,0 +1,41 @@
+name: Update Osaka weather calendar
+
+on:
+  push:
+    paths:
+      - "generate_weather.py"
+      - ".github/workflows/update-weather.yml"
+  workflow_dispatch:
+  schedule:
+    # Every day at 00:20 UTC = 09:20 Japan time
+    - cron: "20 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate rolling weather ICS
+        run: python generate_weather.py
+
+      - name: Commit updated calendar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add osaka-weather.ics
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update Osaka weather calendar"
+            git push
+          fi
