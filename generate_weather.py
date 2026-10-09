@@ -17,16 +17,34 @@ TZ = "Asia/Tokyo"
 OUT = "osaka-weather.ics"
 
 WEATHER = {
-    0: ("☀️", "晴朗"), 1: ("🌤️", "大致晴朗"), 2: ("⛅", "局部多云"),
-    3: ("☁️", "阴天"), 45: ("🌫️", "雾"), 48: ("🌫️", "雾凇"),
-    51: ("🌦️", "毛毛雨"), 53: ("🌦️", "中等毛毛雨"), 55: ("🌧️", "强毛毛雨"),
-    56: ("🌧️", "冻毛毛雨"), 57: ("🌧️", "强冻毛毛雨"),
-    61: ("🌦️", "小雨"), 63: ("🌧️", "中雨"), 65: ("🌧️", "大雨"),
-    66: ("🌧️", "冻雨"), 67: ("🌧️", "强冻雨"),
-    71: ("🌨️", "小雪"), 73: ("🌨️", "中雪"), 75: ("❄️", "大雪"),
-    77: ("🌨️", "雪粒"), 80: ("🌦️", "小阵雨"), 81: ("🌧️", "阵雨"),
-    82: ("⛈️", "强阵雨"), 85: ("🌨️", "小阵雪"), 86: ("❄️", "强阵雪"),
-    95: ("⛈️", "雷暴"), 96: ("⛈️", "雷暴伴小冰雹"), 99: ("⛈️", "雷暴伴大冰雹"),
+    0: ("☀️", "Clear sky"),
+    1: ("🌤️", "Mainly clear"),
+    2: ("⛅", "Partly cloudy"),
+    3: ("☁️", "Overcast"),
+    45: ("🌫️", "Fog"),
+    48: ("🌫️", "Depositing rime fog"),
+    51: ("🌦️", "Light drizzle"),
+    53: ("🌦️", "Moderate drizzle"),
+    55: ("🌧️", "Dense drizzle"),
+    56: ("🌧️", "Light freezing drizzle"),
+    57: ("🌧️", "Dense freezing drizzle"),
+    61: ("🌦️", "Slight rain"),
+    63: ("🌧️", "Moderate rain"),
+    65: ("🌧️", "Heavy rain"),
+    66: ("🌧️", "Light freezing rain"),
+    67: ("🌧️", "Heavy freezing rain"),
+    71: ("🌨️", "Slight snow"),
+    73: ("🌨️", "Moderate snow"),
+    75: ("❄️", "Heavy snow"),
+    77: ("🌨️", "Snow grains"),
+    80: ("🌦️", "Slight rain showers"),
+    81: ("🌧️", "Moderate rain showers"),
+    82: ("⛈️", "Violent rain showers"),
+    85: ("🌨️", "Slight snow showers"),
+    86: ("❄️", "Heavy snow showers"),
+    95: ("⛈️", "Thunderstorm"),
+    96: ("⛈️", "Thunderstorm with slight hail"),
+    99: ("⛈️", "Thunderstorm with heavy hail"),
 }
 
 def get_json(url):
@@ -70,12 +88,12 @@ def event(day, row, source):
     sunset_s = "—" if not sunset else str(sunset)[11:16]
     summary = f"{icon} {high_s}～{low_s}"
     description = (
-        f"地区：大阪市\\n天气：{desc}\\n最高气温：{high_s}\\n最低气温：{low_s}\\n降水概率：{rain_s}\\n湿度：{humidity_s}\\n日出：{sunrise_s}\\n日落：{sunset_s}\\n"
-        f"数据来源：Open-Meteo（{source}）\\n"
-        "说明：历史值为再分析/模型估算，不是气象台观测站原始实测记录。"
-        if day < today_jst() else
-        f"地区：大阪市\\n天气：{desc}\\n最高气温：{high_s}\\n最低气温：{low_s}\\n降水概率：{rain_s}\\n湿度：{humidity_s}\\n日出：{sunrise_s}\\n日落：{sunset_s}\\n"
-        "数据来源：Open-Meteo 天气预报"
+        f"{icon} {desc}\n"
+        f"🌡️ High {high_s} · Low {low_s}\n"
+        f"🌧️ Precipitation chance {rain_s}\n"
+        f"🌅 Sunrise {sunrise_s} · Sunset {sunset_s}\n"
+        f"💧 Humidity {humidity_s}\n\n"
+        f"Osaka · Data: Open-Meteo ({source})"
     )
     uid = f"osaka-weather-{day.isoformat()}@osaka-weather-calendar"
     dtstamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -93,15 +111,23 @@ def today_jst():
 
 def read_daily(data):
     daily = data.get("daily", {})
+    hourly = data.get("hourly", {})
+    humidity_by_day = {}
+    for timestamp, humidity in zip(hourly.get("time", []), hourly.get("relative_humidity_2m", [])):
+        if humidity is not None:
+            humidity_by_day.setdefault(date.fromisoformat(timestamp[:10]), []).append(float(humidity))
     result = {}
     times = daily.get("time", [])
     for i, ds in enumerate(times):
-        result[date.fromisoformat(ds)] = (
+        day = date.fromisoformat(ds)
+        humidities = humidity_by_day.get(day, [])
+        humidity = round(sum(humidities) / len(humidities)) if humidities else None
+        result[day] = (
             daily.get("weather_code", [None] * len(times))[i],
             daily.get("temperature_2m_max", [None] * len(times))[i],
             daily.get("temperature_2m_min", [None] * len(times))[i],
             daily.get("precipitation_probability_max", [None] * len(times))[i],
-            daily.get("relative_humidity_2m_mean", [None] * len(times))[i],
+            humidity,
             daily.get("sunrise", [None] * len(times))[i],
             daily.get("sunset", [None] * len(times))[i],
         )
@@ -119,7 +145,8 @@ def main():
         params = {
             "latitude": LAT, "longitude": LON,
             "start_date": past_start.isoformat(), "end_date": older_end.isoformat(),
-            "daily": "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,relative_humidity_2m_mean,sunrise,sunset",
+            "daily": "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunrise,sunset",
+            "hourly": "relative_humidity_2m",
             "timezone": TZ, "temperature_unit": "celsius",
         }
         data_by_day.update(read_daily(get_json(api_url("https://archive-api.open-meteo.com/v1/archive", params))))
